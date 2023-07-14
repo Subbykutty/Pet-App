@@ -1,0 +1,123 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+.post-1{
+    background: linear-gradient(to right, #F48E56, #F3D09B);
+    border-radius: 10px;
+    box-shadow: 2px 1px 20px grey;
+    color: white;
+    width: 160px;
+    height: 90px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    position: relative;
+    h4{
+      color: white;
+      position: absolute;
+      left: 15px;
+      top: 40px;
+    }
+    p{
+      color: white;
+      position: absolute;
+      left: 10px;
+      top: 20px;
+    }
+  
+  }
+  .paw{
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    font-size: 39px;
+    transform: rotate(-20deg);
+    opacity: 0.5;
+    color: white;
+  }
+  select{
+    border :0.5px solid grey;
+    border-radius: 15px;
+    font-size: 14px;
+    padding :3px 10px;
+    width:220px;
+    margin: 10px;
+    color: grey;
+    option{
+      font-size: 14px;
+      font-weight: 600;
+    }  
+  }
+  .edited-btn{
+    background:linear-gradient(to right,#9B2FD7,#D375EF);
+    letter-spacing: 0.5px;
+    border-radius: 40px;
+    color: white;
+    float: right;
+    height: 30px;
+    font-size: 13px;
+    font-weight: 400;
+    width: 110px;
+    padding: 5px;  
+  }
+  .slt{
+    border:none !important;
+    background:none !important;
+    color: white !important;
+  }
+  input{
+    border-radius: 30px;
+    padding: 8px;
+    width: 25rem;
+    background-color:#dee2e6 ;
+    height: 2rem;
+    border: none;
+    margin-top: 2rem;
+    margin-bottom: 8px;          
+}
+.text{
+  font-size: 14px;
+  font-weight: 650;
+}
+.srch{
+    position: relative;
+    left: -30px;
+    transform: rotate(90deg)
+}
+.b-card{
+  width: 190px;
+  margin: 20px;
+  border-radius: 10px;
+  border: none;
+}
+.map{
+  color: red;
+  font-size: 20px;
+  margin-right: 4px;
+}
+.span-dot{
+  font-size: 24px;
+  font-weight: 600;
+  float: right;
+  transform: rotate(90deg);
+  margin-top:10px;
+  margin-right: 5px;
+}
+.my-card{
+  background-color: #F0EEF1;
+  border:none;
+}
+.sub-title-1{
+  font-size: 12px;
+  color: gray;
+  margin-top: 3px;
+  margin-left: 4px;
+}
+.user-select{
+    border: none;
+    background: none;
+    width: 168px;
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+}
+  

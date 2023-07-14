@@ -1,0 +1,111 @@
+<div class="container-fluid">
+    <div class="row ml-2">
+        <h5>Pet Food & Accessories</h5>
+    </div>
+    <div class="row mt-3" style="display:flex ;flex-direction: row;">
+            <div class=" post-1 allign-div col-3">
+              <p>Total Products</p>
+              <h4>574</h4>
+              <i class="fa fa-paw paw" aria-hidden="true"></i>
+            </div>
+            <div class=" post-2 allign-div col-3">
+              <p>Threshold Reached</p>
+              <h4>32</h4>
+              <i class="fa fa-paw paw" aria-hidden="true"></i>
+            </div>
+          </div>
+        <div class="row">
+          <div>
+            <input type="text" placeholder="Search"/><span><i class="fa fa-search srch" aria-hidden="true"></i></span>
+          </div>
+        </div>
+          <div class="row">
+            <div class="col-3">
+              <select>
+                <option>Select Product</option>
+                <option>Select Products</option>
+              </select>
+            </div>
+            <div class="col-3">
+              <select>
+                <option>Select Category</option>
+                <option>Select Categories</option>
+              </select>
+            </div>
+            <div class="col-6">
+              <button class="btn edited-btn ml-auto" (click)="add()">Add a new</button>
+            </div>
+          </div>
+
+          <!-- Table Starts -->
+          <div class="table-div table-wrapper-scroll-y my-custom-scrollbar">
+            <table>
+              <thead>
+              <tr class="tr-1">
+                 <th></th>
+                <th class="col-3">Product Name</th>
+                <th class="col-2">Product id</th>
+                <th class="col-2">Category</th>
+                <th class="col-1">Qty</th>
+                <th class="col-1">Price</th>
+                <th class="col-2">Stock Available</th>
+                <th class="col-1">Action</th>
+               </tr>
+              </thead>
+               <tbody>
+              <tr class="tr-2" (click)="showDetails()">
+                <td class="ml-1"><img class="ml-1" src="../../../assets/iams.jpg" height="30" width="20"/></td>
+                <td>IAMS-Smart Puppy</td>
+                <td>#00987</td>
+                <td class="px-3">Dry,Pellets</td>
+                <td>3 kg</td>
+                <td class="p-3">&#8377;1600</td>
+                <td class="txt-line">38</td>
+                <td class="px-4">...</td>
+              </tr>
+              <tr class="tr-2">
+                <td class="p-3"><img src="../../../assets/chappi.jpg" height="30" width="30"/></td>
+                <td>Chappi</td>
+                <td>#00567</td>
+                <td class="p-4">Dry</td>
+                <td>3kg</td>
+                <td class="p-3">&#8377;347</td>
+                <td class="txt-line">70</td>
+                <td class="px-4">...</td>
+              </tr>     <tr class="tr-2">
+                <td class="p-3"><img src="../../../assets/gravity.jpg" height="30" width="30"/></td>
+                <td>Gravity Pet Waterer</td>
+                <td>#00234</td>
+                <td class="p-4">Accessories</td>
+                <td>1</td>
+                <td class="p-3">&#8377;2000</td>
+                <td class="txt-line">03</td>
+                <td class="px-4">...</td>
+              </tr>
+                <tr class="tr-2">
+                <td class="p-3"><img src="../../../assets/pedefood.jpg" height="30" width="30"/></td>
+                <td>Pedigree</td>
+                <td>#00871</td>
+                <td class="p-4">Chunks,Gravy,Wet</td>
+                <td>3 kg</td>
+                <td class="p-3">&#8377;540</td>
+                <td class="txt-line">42</td>
+                <td class="px-4">...</td>
+              </tr>
+              <tr class="tr-2">
+                <td class="p-3"><img src="../../../assets/chew.jpg" height="30" width="30"/></td>
+                <td>Chew Bones</td>
+                <td>#06754</td>
+                <td class="p-4">Bone</td>
+                <td>3 pieces</td>
+                <td class="p-3">&#8377;299</td>
+                <td class="txt-line">15 </td>
+                <td class="px-4">...</td>
+              </tr>
+               </tbody>
+              </table>
+          </div>
+
+          <!-- Table Ends -->
+</div>
+

@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.img-mod{
+    border-radius: 50%;
+    height: 70px;
+    width: 100px;
+}
+.back{
+    cursor: pointer;
+}
+.my-btn{
+    background: linear-gradient(to right,rgb(100, 14, 230),   rgb(182, 20, 211));
+    color: white;
+    border: none;
+    height: 27px;
+    border-radius: 35px;
+    padding:1px 40px;
+    font-weight: 600;
+    margin: 15px 5px 0px 0px;
+}
+.my-span{
+    font-weight: 700;
+    color: #7F36F8;
+}
+.p-tag{
+    color: black;
+    font-weight: 600;
+    font-size: 12px;
+    margin: 20px;
+}
+.p-bold{
+    font-size: 14px;
+    font-weight: 650;
+    margin: 30px;
+    }
+    .p-span{
+        margin: 30px;
+        font-size: 12px;
+        margin-left: -20px;
+        font-weight:700;
+        color: rgb(83, 77, 77);
+    }
+    .Arr{
+        margin: 5px 4px;
+        
+    }
+.p-name{
+    color: #1237CD;
+    font-size: 15px;
+    text-decoration: underline;
+    font-weight: 600;
+}
+.p-tagg{
+    float: right;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 10px 3px;
+    color: gray;
+    margin-right:45px ;
+    margin-top: -49px !important;
+}
+.my-btn2{
+    background: white;
+    border: none;
+    border-radius: 35px;
+    border: 1px solid black;
+    padding:1px 40px;
+    font-weight: 600;
+    height: 27px;
+    margin-top:10px ;
+    margin-left: 10px;
+    margin: 15px 5px 0px 0px;
+    float: right !important;
+}
+.my-btnn{ 
+   background: linear-gradient(to right,#2C70D6,#76B2F0); 
+   border: none;
+   float: right !important;
+   border-radius: 35px;
+   padding:2px 45px;
+   margin-left: 100px;
+   color: white;
+   letter-spacing: 0.7px;
+}
+.img-dog{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    margin-left: 20px !important;
+    padding: 10px;
+
+    
+ }
+table{
+    width: 90% ;
+}
+.ig-td{
+    padding: 10px;
+    
+}
+ tbody{
+    border: 15px solid #d3d3d3;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin: 10px;
+
+ }
+.tr-1{
+    th{color:gray;
+        font-size: 13px;
+    }
+
+
+}
+table{
+    margin:5px 25px 40px 45px;
+    
+}
+.tr-2{
+
+    border:10px solid #d3d3d3 !important;
+    border-radius: 5px !important;
+    background-color: white;
+    justify-content: space-between;
+    
+    td{
+        color: rgb(43, 41, 41);
+        font-size: 13px;
+        font-weight: 700;
+        margin: 20px;
+    }
+}
+
+.txt{
+    color: #1231CD !important;
+    cursor: pointer;
+    text-decoration:underline;
+}

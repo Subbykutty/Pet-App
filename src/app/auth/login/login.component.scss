@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.my-container{
+    background-image:url(../../../assets/Login_bg1.png);
+    position: cover;
+    height: 100vh;
+}
+.img-div{
+    background-image: url(../../../assets/Login_bg2.png);
+    background-size:100% 100%;
+    // min-height: 100vh;
+    // width: auto;
+    background-repeat: no-repeat;
+    border-top-right-radius: 9px;
+    border-bottom-right-radius: 9px;
+}
+.txt-align{
+    h5{
+        font-weight: bold;
+        font-size: 35px;
+        color: white;
+        margin:0px 10px 0px 10px;
+    }
+    .sale{
+        color: gold;
+        // font-family: myriadpro;
+    }
+    p{
+
+    }
+    
+
+}
+
+
+.p-align{
+    position: absolute;
+    bottom: 50px;
+    left:10px;
+    font-size: 12px;
+    p{
+        color: white;
+    }
+
+}
+.card{
+    border-radius: 9px;
+    border: none;
+}
+.login-div{
+    span{
+    text-align: start;
+}
+    input{
+        border-radius: 4px;
+        margin: 10px;
+        width: 280px; 
+        padding: 10px;
+        background-color: rgb(239, 238, 238);
+        border: none;
+    }
+    span{
+        font-size: 13px;
+    }
+    p{
+        color: grey;
+        margin: 15px;
+        text-align: center;
+        font-weight: 100;
+        font-size: 14px;
+    }
+    .pass-text{
+        margin-top: -5px;
+        font-weight: 400;
+    }
+    button{
+        padding:3px 20px;
+        height: 35px;
+        width: 300px;
+        background: linear-gradient(to right,rgb(123, 15, 123) ,rgb(207, 191, 229));
+        border: none;
+        border-radius: 18px;
+        margin-bottom: 15px;
+    }
+    .check{
+        height: 15px;
+        width: 20px;
+        margin-right: 270px;
+    }
+    span{
+        color: blue;
+    }
+    .label-allign{
+        margin-right: 190px;
+        color: grey;
+        font-size: 14px;
+        
+    }
+    .label-allign-1{
+        margin-right: 120px;
+        position: relative;
+        bottom: 30px;
+        font-weight: 600;
+    }
+    .p-align-1{
+        font-size: 100px;
+        font-weight: 100px;
+    }
+}
+
+.title-1{
+    margin-top: 80px;
+    text-align: center;
+    font-weight: bold;
+}
+@media only screen and (min-width:350px) and (max-width: 995px) {
+.img-div {
+        height: 70vh;
+        width: 100%;
+   
+    }
+  }

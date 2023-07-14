@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.my-card-1{
+    border:none;
+}
+.h6-sizing{
+    margin: 20px 10px 20px 30px;
+}
+
+.Arr{
+    margin: 5px 4px 10px 18px ;   
+}
+textarea{
+    height: 93px !important;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+  }
+  /* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.my-label-1{
+    font-size: 13px;
+    font-weight: 500;
+    color: grey;
+    padding-top:1px;
+    margin:25px 10px 5px 23px;
+}
+.inp-mine{
+    background-color: #ededef;
+    border-radius: 6px;
+    border: none;
+    padding: 3px;
+    font-weight: 600;
+    font-size: 13px;
+    height: 30px;
+
+}
+.rupee{
+    position: absolute;
+    bottom:5px;
+    right:20px;
+    font-size: 18px;
+}
+.btn-1{
+    border: none;
+    width: 270px;
+    border-radius: 35px;
+    color: #fff;
+    background-color: #C2BFC4;
+    padding: 4px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.btn-2{
+    border: none;
+    width : 270px;
+    border-radius: 35px;
+    background: linear-gradient(to right,#9527D4,#D577F0);
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 4px;  
+}
+.option-1{
+    font-weight: 600;
+    font-size: 13px;
+}
+.back{
+    cursor: pointer;
+}
+select{
+    height: 30px;
+}

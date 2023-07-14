@@ -1,0 +1,149 @@
+*{
+ margin:0;padding: 0;box-sizing: border-box;   
+}
+.my-card-1{
+    margin-bottom: 20px;
+    border: none;
+}
+.Arr{
+    margin: 5px 4px;  
+}
+textarea{
+    height: 93px !important;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+  }
+  /* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.my-label-1{
+    font-size: 13px;
+    font-weight: 500;
+    color: grey;
+    padding-top:1px;
+    margin:25px 10px 5px 23px;
+}
+.inp-mine{
+    background-color: #ededef;
+    border-radius: 6px;
+    border: none;
+    padding: 3px;
+    font-size: 13px;
+    font-weight: 500;
+    height: 30px;
+    
+    
+}
+.inp-mine-2{
+    background-color: #ededef;
+    border-radius: 6px;
+    border: none;
+    padding: 3px;
+    text-align: end;
+    font-weight: 700;
+    color: black !important;
+    
+}
+.btn-mine{
+    background-color: #3F84F7;
+    color:white;
+    border: none;
+    border-radius: 35px;
+    padding:1px 25px;
+    margin-left:17px !important;
+}
+.back{
+    cursor: pointer;
+}
+.p-mine{
+    margin:25px 10px 5px 70px;
+    p{
+        font-size: 13;
+        font-weight: 600;
+    }
+    span{
+        color: gray;
+        font-size: 13px;
+    }
+}
+.p-mine-1{
+    margin:45px 10px 5px 3px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.img-div{
+    margin-left: -67px;
+    img{
+        border-radius: 6px;
+        margin: 10px 0px 0px 10px;
+    }
+    .img-mine{
+        position: relative;
+        bottom: 18px;
+        left: 381px;
+    }
+    .img-mine-1{
+        position: relative;
+        bottom: 18px;
+        left: 281px;
+    }
+    .img-mine-2{
+        position: relative;
+        bottom: 18px;
+        left: 177px;
+    }
+    .img-mine-3{
+        position: relative;
+        bottom: 18px;
+        left: 77px;
+    }
+}
+.btn-mine-1{
+    background-color: #3F84F7;
+    color:white;
+    border: none;
+    border-radius: 35px;
+    padding:1px 25px;
+}
+.Cancel{
+    background-color: #C2BFC4;
+    border-radius: 35px;
+    width: 300px;
+    height: 30px;
+    border: none;
+    color: white;
+}
+.pet{
+    background:linear-gradient(to right,#9527D4,#D577F0);
+    border-radius: 35px;
+    width: 300px;
+    height: 30px;
+    font-size: 15px;
+    font-weight: 600;
+    border:none;
+    color: white;
+}
+.btn-div{
+margin-bottom: 40px;
+}
+select{
+    height: 30px;
+
+.rupee{
+    position:absolute ;
+    bottom: -20px;
+    left:20px;
+    font-size:18px;
+    color: red;
+}
+
+.option-1{
+    font-size: 13px;
+    font-weight: 500;
+    // color: red;
+}
+}

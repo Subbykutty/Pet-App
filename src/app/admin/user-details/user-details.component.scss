@@ -1,0 +1,91 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+.Arr{
+    margin: 5px 4px;  
+}
+.card{
+    border: none;
+}
+
+.p-bold{
+    font-size: 13px;
+    font-weight:600;
+    margin: 30px;
+    }
+    .p-span{
+        margin: 30px;
+        font-size: 12px;
+        margin-top: -30px;
+        font-weight:700;
+        color: rgb(83, 77, 77);
+    }
+    .header-div{
+        img{
+            border-radius: 50%;
+            height: 60px;
+            width: 60px;
+
+        }
+        .h6-tag{
+            font-weight: 500;
+            font-size: 15px;
+        }
+
+        .p-tag{
+            font-size: 12px;
+            font-weight: 500;
+            color: gray;    
+        }
+        .h6-line{
+            text-decoration: underline;
+            font-size: 14px;
+            color: blue;
+            margin-right: 70px;
+            margin-top: -10px;
+        }
+    }
+    .back{
+        cursor: pointer;
+    }
+
+    .description{
+        background-color:#F5F3F6;
+        margin: 20px;
+        border-radius: 5px;
+        p{
+            font-size: 12px;
+            color: rgb(69, 65, 65);
+            margin: 20px;
+        }
+    }
+
+
+    .description-1{
+        background-color:#F5F3F6;
+        margin: 20px;
+        margin-top: -8px;
+        border-radius: 5px;
+        p{
+            font-size: 12px;
+            color: rgb(69, 65, 65);
+            margin: 20px;
+        }
+    }
+.cross{
+    margin-right: 40px;
+}
+    .h6-bold{
+        font-size: 14px;
+        font-weight: 700;
+    }
+    .h6-font{
+        font-size: 14px;
+        font-weight: 500;
+
+    }
+    .p-span-1{
+        font-size: 14px;
+        font-weight: 600;
+        color: gray;
+    }

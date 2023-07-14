@@ -1,0 +1,46 @@
+<div class="container-fluid my-container">
+    <div class="row">
+       <div class="col-lg-8" style="margin: auto;">
+          <div class="card mt-5">
+             <div class="row">
+                <div class="col-md-7 login-div">
+                   <h3 class="title-1">{{title}}</h3>
+                   <p>Welcome back dear friend! Please Login and enjoy our sevices</p>
+                   <form [formGroup]="loginForm">
+                    <div class="d-flex" style="flex-direction: column; align-items: center;justify-content: center;">
+                    <label class="label-allign">User Name</label>    
+                    <input type="text" class="form-control" formControlName="name" id="nameElement"/>
+                    <span
+                    *ngIf="name.invalid && (name.dirty || name.touched)"
+                    class="text-danger">
+                    <span id="nameRequired" class="text-danger" *ngIf="name.errors?.['required']">Valid User Name is required
+                    </span>
+                    </span>
+                    <label class="label-allign">Password</label>
+                    <input type="password" class="form-control" formControlName="password" id="passwordElement"/>
+                    <div
+          *ngIf="password.invalid && password.touched"
+          class="text-danger" id="passwordValidation">
+          <span class="text-danger" id="passwordRequired" *ngIf="password.errors?.['required']">Valid Password is required</span>
+        </div>
+                    <input type="checkbox" id="subscribe" (click)="checker" class="check"/><label class="label-allign-1">Remember Me</label>
+                    <button type="submit" (click)="loginbtn()" class="btn btn-danger">LOGIN</button>
+                    <p class="pass-text">Forget password?</p>
+                </div>
+                   </form>
+                </div>
+                <div class="col-lg-5 img-div">
+                   <!--  <img src="../../assets/login_bg2.png" class="img-fluid img-img"/> -->
+                  
+                   <div class="txt-align">
+                      <h5 class="sale">Pet</h5>
+                      <h5>Sales</h5>
+                   </div>
+                   <div class="p-align">
+                      <p class="p-align-1">Welcome Back Dear Friend! <br/> Please Login and enjoy our services </p>
+                   </div>
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>

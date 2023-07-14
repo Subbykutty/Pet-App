@@ -1,0 +1,70 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+.Arr{
+    margin: 5px 5px; 
+    margin-left: 13px;  
+}
+.card{
+    border:none;
+}
+.back{
+    cursor: pointer;
+}
+.p-tag{
+    font-size: 13px;
+    font-weight: 600;
+    color: gray;
+}
+.h6-line{
+    text-decoration: underline;
+    font-size: 14px;
+    color: blue;
+    margin-right: 70px;
+ 
+}
+.img-content{
+    border-radius: 10px;
+}
+.description{
+    background-color:#F5F3F6;
+    margin: 20px;
+    border-radius: 5px;
+    
+    p{
+        font-size: 12px;
+        font-weight: 500;
+        color: rgb(69, 65, 65);
+        margin: 25px;
+    }
+}
+.my-title{
+    font-size: 13px;  
+    .para{
+            font-weight: 700 !important;
+            color: black;
+    }
+    p{
+        color: gray;
+        font-weight: 500;
+        flex-direction: row;
+        align-items: start;
+    }
+}
+.h6-desc{
+    font-size: 14px;
+    font-weight: 600;
+
+}
+
+.my-title-2{
+    p{
+        font-size: 13px;
+        font-weight: 500;
+    }
+    .my-p{
+        color: rgb(56, 56, 203);
+    }   
+    .para{
+        font-weight: 700 !important;
+        color: black;
+}
+}

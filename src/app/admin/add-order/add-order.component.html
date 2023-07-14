@@ -1,0 +1,107 @@
+<div class="container-fluid">
+    <div class="row back" (click)="back()">
+        <i class="fa fa-long-arrow-left Arr" aria-hidden="true"></i><span>Back</span>
+    </div>
+    <div class="row">  <h3 class="h3-allign">Add a New Order</h3></div>
+    <div class="card card-mine">
+        <h6 class="h6-allignment">Select Customer</h6>
+        <div class="row">
+            <div class="col-5 ml-5 mt-3" style="display: flex;flex-direction: column;">
+                <label class="my-label-1">Customer Contact Number</label>
+                <select class="inp-mine option-1"><option>+91 8597869765</option>
+                        <option>No</option>
+                    </select>
+            </div>
+        
+            <div class="col-5 ml-5" style="display: flex; flex-direction: column;">
+                <label class="my-label-1 mt-3">Customer Name</label>
+                <input class="inp-mine" type="text"/>
+            </div>
+        </div>
+                <h6 class="h6-allignment-1">Select Products</h6>
+                    <div class="card my-card">
+                        <h6 class="remove ml-auto">Remove<span class="span-i"><i class="fa fa-times" aria-hidden="true"></i></span></h6>
+                <!-- new -->
+                <div class="row">
+                    <div class="col-5 ml-5 mt-3" style="display: flex;flex-direction: column;">
+                        <label class="my-label-1">Product Name</label>
+                        <select class="inp-mine option-1"><option>Chappi</option>
+                                <option>Pedegree</option><option>Bones</option>
+                            </select>
+                    </div>
+                
+                    <div class="col-5 ml-5" style="display: flex; flex-direction: column;">
+                        <label class="my-label-1 mt-3">Product id</label>
+                        <input class="inp-mine" type="text"/>
+                    </div>
+                </div>
+                <!-- end -->
+                <!-- new -->
+                <div class="row mt-3">
+                    <div class="col-5 ml-5" style="display: flex;flex-direction: column;">
+                        <label class="my-label-1">Unit</label>
+                        <select class="inp-mine option-1"><option>3Kg</option>
+                                <option>2Kg</option><option>5Kg</option>
+                            </select>
+                    </div>
+                
+                    <div class="col-5 ml-5" style="display: flex;flex-direction: column;">
+                        <label class="my-label-1">Quantity</label>
+                        <select class="inp-mine option-1"><option>1</option>
+                                <option>2</option><option>3</option>
+                            </select>
+                    </div>
+                </div>
+                <!-- end -->
+                 <div class="row">    
+                    <div class="col-5 ml-5" style="display: flex; flex-direction: column;">
+                        <label class="my-label-1 mt-3">Price</label>
+                        <input class="inp-mine" type="text"/><i class="fa fa-inr rupee" aria-hidden="true"></i>
+                    </div>
+                </div>
+             </div>
+    
+    <div class="row">
+        <div class="col-md-12">
+            <p class="p-allign h6-allignment">Add another product+</p>
+         </div>
+
+    </div>
+            <h6 class="h6-allignment">Select Delivery Address</h6>
+    <div class="row">
+        <div class="col-md-12 radio-div">
+            <input type="radio"/><span>Home</span>
+            <input type="radio"/><span>Office</span>
+            <input type="radio"/><span>Others</span>
+    </div>
+    </div>
+
+    <div class="row">
+        <div class="col-5 ml-5" style="display: flex; flex-direction: column;">
+            <label class="my-label-1 mt-3">State</label>
+            <input class="inp-mine" type="text"/>
+        </div>
+    
+        <div class="col-5 ml-5" style="display: flex; flex-direction: column;">
+            <label class="my-label-1 mt-3">City</label>
+            <input class="inp-mine" type="text"/>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-5 ml-5" style="display: flex; flex-direction: column;">
+            <label class="my-label-1 mt-2">Location</label>
+            <input class="inp-mine" type="text"/>
+        </div>
+        <div class="col-5 ml-5" style="display: flex; flex-direction: column;">
+            <label class="my-label-1 mt-2">Pincode</label>
+            <input class="inp-mine" type="number"/>
+        </div>
+    </div>
+    <div class="row mt-5 mb-5">
+        <div class="col-4 ml-5">
+           <button class="btn-1 ml-5">Cancel</button>
+        </div>
+        <div class="col-4 ml-3"><button class="btn-2 mr-2">Add Order</button></div>
+    </div>
+</div>
+<!-- </div> -->

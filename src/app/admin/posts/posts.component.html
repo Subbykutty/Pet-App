@@ -1,0 +1,167 @@
+<div class="container-fluid">
+    <div class="row">
+    </div>
+    <div class="top-part">
+        <div class="row">
+          <div class="col-lg-12 ml-1 mb-3 col-12 page-title">
+            <h2 style="font-size: 22px ;font-weight: 600;">
+              Posts</h2>
+          </div>
+        </div>
+    
+        <div class="row cards">
+    
+          <div class="post-1">
+            <div class="nothing">
+              <p>Total Orders</p>
+              <h4>34</h4>
+              <i class="fa fa-paw" aria-hidden="true"></i>
+            </div>
+          </div>
+    
+    
+          <div class="post-2">
+            <div class="nothing">
+              <p>Approved</p>
+              <h4>21</h4>
+              <i class="fa fa-paw" aria-hidden="true"></i>
+            </div>
+          </div>
+    
+          <div class="post-3">
+            <div class="nothing">
+              <p>Rejected</p>
+              <h4>11</h4>
+              <i class="fa fa-paw" aria-hidden="true"></i>
+            </div>
+          </div>
+    
+          <div class="post-4">
+            <div class="nothing">
+              <p>Pending</p>
+              <h4>02</h4>
+              <i class="fa fa-paw" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12">
+        <ul>      
+            <div class="ml-auto dropdown" style="float: right;">
+              <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Coimbatore,India
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              </div>
+            </div>
+          </ul>
+      <div class="col-12">
+        <input type="text" class="input-comp" placeholder="Search"/><span><i class="fa fa-search f-srch" aria-hidden="true"></i></span>
+        <button class="btn button-ed ml-auto" (click)="myPet()">Add a new<select class="slt"></select></button> 
+</div>
+    </div>
+    <div class="row mt-2">
+        <select class="select-inp my-select mr-4" value="Select Category" name="Select Category" id="cars">
+              <option>Select Category</option>
+              <option>Dog</option>
+              <option>Cat</option>
+              <option>Rabbit</option>
+          </select>
+          <select class="select-inp my-select mr-2" value="Select Breed" name="Select Breed" id="cars">
+              <option>Select Breed</option>
+              <option>GSD</option>
+              <option>Rotwiller</option>
+          </select> 
+    </div>
+    <div class="table-div" id="Pets" role="tabpanel" aria-labelledby="pet-tabs">
+
+        <table style="width:100%">
+          <thead>
+          <tr class="ml-3">
+             <th><input  class="ml-4 mt-1 my-inp" type="checkbox"/></th>
+            <th class="px-3">Date</th>
+            <th class="px-3">Order</th>
+            <th class="px-3">Category</th>
+            <th class="px-3">Breed</th>
+            <th class="px-3">Price</th>
+            <th class="px-3">User</th>
+            <th class="px-3">Location</th>
+            <th class="px-4">Status</th>
+            <th class="px-2">Action</th>
+           </tr>
+          </thead>
+           <tbody>
+          <tr class="tr-2">
+            <td class="p-3"><input  class="my-inp" type="checkbox"/></td>
+            <td>23/04/2021</td>
+            <td class="p-3">#00987</td>
+            <td class="p-4">Dog</td>
+            <td>German Shepherd</td>
+            <td class="p-3">$7000</td>
+            <td class="txt-line" (click)="goPlaces()">karthick Raja</td>
+            <td>Coimbatore,India</td>
+            <td class="p-3"><div class="dropdown">
+              <button class="dropbtn my-btn">Approve</button>
+              <div class="dropdown-content">
+                <a>Approve Post</a>
+                <a>Reject Post</a>
+                <a>Close Post</a>
+              </div>
+            </div></td>
+           
+            <td class="px-4">...</td>
+          </tr>
+          <tr class="tr-2">
+            <td class="p-3"><input  class="my-inp" type="checkbox"/></td>
+            <td>23/04/2021</td>
+            <td class="p-3">#00567</td>
+            <td class="p-4">Cat</td>
+            <td>Persian</td>
+            <td class="p-3">$8000</td>
+            <td class="txt-line">Vicky</td>
+            <td>Coimbatore,India</td>
+            <td class="p-3"><button class="my-btn">Approve</button></td>
+            <td class="px-4">...</td>
+          </tr>
+  
+          <tr class="tr-2">
+            <td class="p-3"><input  class="my-inp" type="checkbox"/></td>
+            <td class="">23/04/2021</td>
+            <td class="p-3">#00234</td>
+            <td class="p-4">Dog</td>
+            <td>Rottweiler</td>
+            <td class="p-3">$9000</td>
+            <td class="txt-line">Ranjith</td>
+            <td>Coimbatore,India</td>
+            <td class="p-3 text-danger">Rejected</td>
+            <td class="px-4">...</td>
+          </tr>
+  
+           <tr class="tr-2">
+             <td class="p-3"><input class="my-inp" type="checkbox"/></td>
+            <td>23/04/2021</td>
+            <td class="p-3">#00871</td>
+            <td class="p-4">Parrot</td>
+            <td>Re-Parrot</td>
+            <td class="p-3">$2500</td>
+            <td class="txt-line">Saranya Devi</td>
+            <td>Coimbatore,India</td>
+            <td class="p-3 text-warning">Inprogress</td>
+            <td class="px-4">...</td>
+           </tr>
+                   <tr class="tr-2">
+            <td class="p-3"><input  class="my-inp" type="checkbox"/></td>
+            <td>23/04/2021</td>
+            <td class="p-3">#00567</td>
+            <td class="p-4">Cat</td>
+            <td>Persian</td>
+            <td class="p-3">$1000</td>
+            <td class="txt-line">Ramya</td>
+            <td>Coimbatore,India</td>
+            <td class="p-3 text-success">Delivered</td>
+            <td class="px-4">...</td>
+          </tr>   
+        </tbody>   
+          </table>
+      </div>
+</div>

@@ -1,0 +1,95 @@
+<div class="container-fluid">
+<div class="row ml-5 mt-2 mb-3">
+    <h6>Ads</h6>
+</div>
+<div class="row ml-4">
+<div class=" post-1 allign-div col-3">
+    <p>Total Ads</p>
+    <h4>65</h4>
+    <i class="fa fa-paw paw" aria-hidden="true"></i>
+  </div>
+</div>
+<div class="row">
+        <div class="col-7">
+          <input type="text" placeholder="Search"/><span><i class="fa fa-search srch" aria-hidden="true"></i></span>
+        </div>
+</div>
+<div class="row">
+    <div class="col-3">
+      <select>
+        <option>Select Page</option>
+        <option>Select Pages</option>
+      </select>
+    </div>
+    <div class="col-3"></div>
+    <div class="col-6">
+        <button class="btn edited-btn ml-auto" (click)="newAdd()">Add a new add</button>
+      </div>
+</div>
+      <!-- Table Starts -->
+      <div class="table-div table-wrapper-scroll-y my-custom-scrollbar">
+        <table>
+          <thead>
+          <tr class="tr-1">
+            <th class="col-3">Add Title</th>
+            <th class="col-1 px-3">Add id</th>
+            <th class="col-2 px-4">Position</th>
+            <th class="col-3 ">Pages</th>
+            <th class="col-1 px-3">Timer</th>
+            <th class="col-1 px-2" >Action</th>
+           </tr>
+          </thead>
+           <tbody>
+          <tr class="tr-2">
+            <td (click)="details()" class="husky">Siberian Husky Puppies For Sale</td>
+            <td>#00987</td>
+            <td class="p-4">Bottom</td>
+            <td>Login,Re,gistration,cart,Summary....</td>
+            <td class="p-3">2 mins</td>
+            <td class="px-4 dot">
+              <div class="dropdown">
+                <button class="dropbtn">...</button>
+                <div class="dropdown-content">
+                  <a>Edit</a>
+                  <a>Clear Post</a>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr class="tr-2">
+            <td>ORGANIX Pet Food</td>
+            <td>#00567</td>
+            <td class="p-4">Top & Bottom</td>
+            <td>Cart,Summary</td>
+            <td class="p-3">2 mins</td>
+            <td class="px-4">...</td>
+          </tr>    
+           <tr class="tr-2">
+            <td>Dog Grooming video</td>
+            <td>#00234</td>
+            <td class="p-4">Top</td>
+            <td>Login</td>
+            <td class="p-3">3 mins</td>
+            <td class="px-4">...</td>
+          </tr>
+            <tr class="tr-2">
+            <td>Purple Pet Sitter Services</td>
+            <td>#00871</td>
+            <td class="p-4">Top</td>
+            <td>Login</td>
+            <td class="p-3">3 mins</td>
+            <td class="px-4">...</td>
+          </tr>
+          <tr class="tr-2">
+            <td>PetRescue Digital</td>
+            <td>#06754</td>
+            <td class="p-4">Bottom</td>
+            <td>Login,Registration</td>
+            <td class="p-3">1 mins</td>
+            <td class="px-4">...</td>
+          </tr>
+           </tbody>
+          </table>
+      </div>
+      <!-- Table Ends -->
+</div>

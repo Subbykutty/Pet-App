@@ -1,0 +1,65 @@
+      <!-- Starts -->
+      <div class="wrapper d-flex">
+        <!-- Sidebar  -->
+        <nav id="sidebar" aria-label="">
+          <div class="sticky-top">
+            <div class="empty" >
+
+            </div>
+            <div class="sidebar-header">
+              <!-- <h3>Bootstrap Sidebar</h3> -->
+            </div>
+            <div class="list-group">
+              <div class="list-group-flush">
+                <a class="list-group-item" routerLink="/admin/dashboard"> <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                  <span class="dash-titles">Dashboard</span> </a>
+                <a class="list-group-item" routerLink="/admin/orders"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                  <span class="dash-titles">Orders </span></a>
+                <a class="list-group-item" routerLink="/admin/posts"><i class="fa fa-telegram" aria-hidden="true"></i>
+                  <span class="dash-titles">Posts</span></a>
+                <a class="list-group-item" routerLink="/admin/ads"><i class="fa fa-calendar-plus-o" aria-hidden="true"></i>
+                  <span class="dash-titles"> Ads</span></a>
+                <a class="list-group-item" routerLink="/admin/accessories"> <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                  <span class="dash-titles"> Pet Food & Accessories</span> </a>
+                <a class="list-group-item" routerLink="/admin/users"> <i class="fa fa-user" aria-hidden="true"></i>
+                  <span class="dash-titles">Users </span> </a>
+                <a class="list-group-item" routerLink="/admin/feedback"> <i class="fa fa-star" aria-hidden="true"></i>
+                  <span class="dash-titles"> Feedbacks</span> </a>
+
+
+                  <a class="list-group-item" routerLink="/auth/login" (click)="logout()"><i class="fa fa-sign-out" aria-hidden="true"></i>   
+                    <span class="dash-titles new-title" > Logout</span> </a>
+              </div>
+            </div>
+          </div>     
+        </nav>
+        <!-- Page Content  -->
+        <div id="content">
+          <nav class="navbar navbar-expand-lg sticky-top">
+            <div class="container-fluid">
+              <i class="fa fa-bars" id="sidebarCollapse"></i>
+              <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+              </button>
+      
+              <div class="collapse navbar-collapse" style="margin-right: 30px;" id="navbarSupportedContent">
+                <img height="30" width="30" class="ml-4" src="../../assets/pawprint.png" />
+             <h6 class="mt-2 ml-3">Pet Sales</h6>
+                <ul style="list-style:none" class="ml-auto ul-allign d-flex">
+                  <li class="mr-5"><i class="fa fa-cog cog " aria-hidden="true" ></i>Settings</li>
+                  <li class="mr-5 chat" (click)="chat()"><div><img class="mr-2" src="../../assets/chat.png" height="20" width="20"><span>Chat</span></div></li>
+                  <li class="mr-5"><div><img class="mr-2" src="../../assets/Notification2.png" height="20" width="20"><span>Notification</span></div></li>
+                  <li class="mr-5 point" (click)="myProfile()"><span><i class="fa fa-user-circle" aria-hidden="true"></i> &nbsp;My Profile </span></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <!-- main page -->
+          <div class="container-fluid main-page">
+            <router-outlet></router-outlet>
+          </div>
+        </div>
+      </div>
+      

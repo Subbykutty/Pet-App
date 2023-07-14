@@ -1,0 +1,78 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+.srch{
+  
+    position: relative;
+    left: -30px;
+    transform: rotate(90deg)
+
+}
+select{
+    border: none;
+    background: none;
+    font-weight: 500;
+}
+.mins{
+    float: right;
+    margin-right:10px;
+    // font-weight: 300;
+    font-size: 13px;
+    margin-top: -10px;
+}
+.p-tag{
+    font-size: 12px;
+    font-weight: 500;
+    color: gray;
+    margin-left: 12px !important;
+}
+.p-tag-1{
+    margin-left: 32px !important;
+}
+.my-backg{
+    margin-bottom: 50px;
+}
+.point{
+    cursor: pointer;
+}
+span{
+    color: gray;
+}
+
+input{
+    border-radius: 30px;
+    padding: 8px;
+    width: 25rem;
+    background-color:#dee2e6 ;
+    height: 2rem;
+    border: none;
+    margin-top: 2rem;
+    margin-bottom: 8px;          
+}
+.card{
+    background-color: #F2F0F3;
+    border: none;
+    margin-bottom:20px ;
+}
+
+.my-bg{
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    width: 100%;
+    margin: 25px 20px 0px 20px;
+}
+.my-bg-1{
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    width: 100%;
+    margin: 15px 20px 0px 20px;
+}
+
+
+.text {
+    display: block;
+    width: 400px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+  }

@@ -1,0 +1,262 @@
+<div class="container main-page">
+    <div class="top-part">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 page-title">
+          <h2 style="font-size: 22px ;font-weight: 600;">
+            Orders</h2>
+        </div>
+      </div>
+     
+      <div class="row cards">
+        <div class="post-1">
+          <div class="nothing">
+            <p>Total Orders</p>
+            <h4>34</h4>
+            <i class="fa fa-paw" aria-hidden="true"></i>
+          </div>
+        </div>
+  
+  
+        <div class="post-2">
+          <div class="nothing">
+            <p>Approved</p>
+            <h4>21</h4>
+            <i class="fa fa-paw" aria-hidden="true"></i>
+          </div>
+        </div>
+  
+        <div class="post-3">
+          <div class="nothing">
+            <p>Rejected</p>
+            <h4>05</h4>
+            <i class="fa fa-paw" aria-hidden="true"></i>
+          </div>
+        </div>
+  
+        <div class="post-4">
+          <div class="nothing">
+            <p>Pending</p>
+            <h4>02</h4>
+            <i class="fa fa-paw" aria-hidden="true"></i>
+          </div>
+        </div>
+  
+        <div class="post-5">
+          <div class="nothing">
+            <p>InProgress</p>
+            <h4>11</h4>
+            <i class="fa fa-paw" aria-hidden="true"></i>
+          </div>
+        </div>
+  
+        <div class="post-6">
+          <div class="nothing">
+            <p>Delivered</p>
+            <h4>08</h4>
+            <i class="fa fa-paw" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div *ngFor="let local of orderData" > 
+      <!-- <p>somenenen{{local.orders.city}}</p> -->
+    </div>
+    <div class="row bg-row">
+      <div class="col-11">
+        <ul>
+          <li class="ltr ml-4 mt-3" style="display:inline-block;" *ngFor="let menuList of menuLists">
+            <a class="ltr my-title" (click)="openMenuList(menuList)">{{menuList}}</a>
+          </li>
+      
+            <div class="ml-auto dropdown" style="float: right;">
+              <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Coimbatore,India
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              </div>
+            </div>
+          </ul>
+      <div class="col-12 inp-srch">
+        <input type="text" placeholder="Search"/><span><i class="fa fa-search f-srch" aria-hidden="true"></i></span>
+        <button class="btn button-ed ml-auto" routerLink="/admin/add">Place Order</button> 
+</div>
+    </div>
+    <div class="row bg-row">
+              <ng-container *ngIf="selected === 'Pet'">
+                <div class="table-div ml-3" id="Pets" role="tabpanel" aria-labelledby="pet-tabs">
+                  <table style="width:100%">
+                    <thead>
+                    <tr>
+                       <th class="px-2"><input  class="ml-2 my-inp" type="checkbox"/></th>
+                      <th class="col-1 px-4">Date</th>
+                      <th class="col-1">Order</th>
+                      <th class="col-1">Category</th>
+                      <th class="col-3  px-4 ">Breed</th>
+                      <th class="col-1">Price</th>
+                      <th class="col-2  px-4">User</th>
+                      <th class="col-1  px-4">Location</th>
+                      <th class="col-1 px-4">Status</th>
+                      <th class="col-1 px-2">Action</th>
+                     </tr>
+                    </thead>
+                     <tbody *ngFor = "let title of orderData">
+                    <tr class="tr-2">
+                      <td class=""><input  class="my-inp" type="checkbox"/></td>
+                      <td  *ngFor="let products of title.orders.products">{{(products.from_date != null || undefined ) ? products.from_date :"-"}} </td>
+                      <td class="">#{{(title.orders.order_id != null || undefined) ? title.orders.order_id : "-"  }}</td>
+                      <td class="px-4" *ngFor="let products of title.orders.products">{{(products.breed !=null || undefined) ? products.breed:"-" }}</td>
+                      <td class=""  *ngFor="let products of title.orders.products">{{(products.category_name !=null || undefined) ? products.category_name:"-"}}</td>
+                      <td class="">&#8377;{{(title.orders.total_amount !=null || undefined) ? title.orders.total_amount:"-"}}</td>
+                      <td class="txt-line" routerLink="/admin/details">{{(title.orders.name !=null || undefined) ? title.orders.name : "-" }}</td>
+                      <td>{{(title.orders.city != null || undefined) ? title.orders.city : "-"}},India</td>
+                      <td class=""><button class="my-btn">{{(title.orders.status !=null || undefined) ? title.orders.status :"-"}}</button></td>
+                      <td class="px-4">...</td>
+                    </tr>
+                    <!-- <tr class="tr-2">
+                      <td class="p-3"><input  class="my-inp" type="checkbox"/></td>
+                      <td>23/04/2021</td>
+                      <td class="p-3">#00567</td>
+                      <td class="p-4">Cat</td>
+                      <td>Persian</td>
+                      <td class="p-3">&#8377;8000</td>
+                      <td class="txt-line">Vicky</td>
+                      <td>Coimbatore,India</td>
+                      <td class="p-3"><button class="my-btn">Approve</button></td>
+                      <td class="px-4">...</td>
+                    </tr>
+            
+                    <tr class="tr-3">
+                      <td class="p-3"><input  class="my-inp" type="checkbox"/></td>
+                      <td class="">23/04/2021</td>
+                      <td class="p-3">#00234</td>
+                      <td class="p-4">Dog</td>
+                      <td>Rottweiler</td>
+                      <td class="p-3">&#8377;9000</td>
+                      <td class="txt-line">Ranjith</td>
+                      <td>Coimbatore,India</td>
+                      <td class="p-3 text-danger my-color">Rejected</td>
+                      <td class="px-4">...</td>
+                    </tr>
+            
+                     <tr class="tr-3">
+                       <td class="p-3"><input class="my-inp" type="checkbox"/></td>
+                      <td>23/04/2021</td>
+                      <td class="p-3">#00871</td>
+                      <td class="p-4">Parrot</td>
+                      <td>Re-Parrot</td>
+                      <td class="p-3">&#8377;2500</td>
+                      <td class="txt-line">Saranya Devi</td>
+                      <td>Coimbatore,India</td>
+                      <td class="p-3 text-warning my-color-1">Inprogress</td>
+                      <td class="px-4">...</td>
+                     </tr>
+                             <tr class="tr-3">
+                      <td class="p-3"><input  class="my-inp" type="checkbox"/></td>
+                      <td>23/04/2021</td>
+                      <td class="p-3">#00567</td>
+                      <td class="p-4">Cat</td>
+                      <td>Persian</td>
+                      <td class="p-3">&#8377;1000</td>
+                      <td class="txt-line">Ramya</td>
+                      <td>Coimbatore,India</td>
+                      <td class="p-3 text-success my-color-2">Delivered</td>
+                      <td class="px-4">...</td>
+                    </tr>    -->
+                  </tbody>   
+                    </table>
+                </div>
+              </ng-container> 
+              <ng-container *ngIf="selected === 'Foods & Accessories'">
+                <div class="row">
+                  <div class="col col-12">
+                      <table class="food-table col-12">
+                          <thead>
+                              <tr class="tr-1 ml-3">
+                                  <th>
+                                      <input type="checkbox" class="my-inp"/>
+                                  </th>
+                                  <th class="col-1 px-4">Date</th> 
+                                  <th class="col-2 px-2">Order id</th>
+                                  <th class="col-3 px-0">No.of items</th>
+                                  <th class="col-2 px-3">Price</th> 
+                                  <th class="col-4 px-4">User</th>
+                                  <th class="col-1">Location</th>
+                                  <th class="col-2 px-4">Status</th>
+                                  <th class="col- px-0">Action</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <tr class="tr-2">
+                                  <td>
+                                      <input type="checkbox" class="my-inp"/>
+                                  </td>
+                                  <td>23/04/2021</td>
+                                  <td>#00987</td>
+                                  <td>03</td>
+                                  <td>&#8377;229</td>
+                                  <td class="txt-line"  routerLink="/admin/food">karthick Raja</td>
+                                  <td>Coimbatore,India</td>
+                                  <td><button class="my-btn">Approve</button></td>
+                                  <td>...</td>
+                              </tr>
+                              <tr class="tr-2">
+                                  <td class="f-size">
+                                      <input type="checkbox" class="my-inp"/>
+                                  </td>
+                                  <td>23/04/2021</td>
+                                  <td>#00567</td>
+                                  <td>02</td>
+                                  <td>&#8377;399</td>
+                                  <td class="txt-line">Vicky</td>
+                                  <td>Coimbatore,India</td>
+                                  <td><button class="my-btn">Approve</button></td>
+                                  <td>...</td>
+                              </tr>
+                              <tr class="tr-3" style="font-weight: 100 !important;">
+                                  <td>
+                                      <input type="checkbox" class="my-inp"/>
+                                  </td>
+                                  <td>23/04/2021</td>
+                                  <td>#00234</td>
+                                  <td>05</td>
+                                  <td>&#8377;158</td>
+                                  <td class="txt-line">Ranjith Kumar</td>
+                                  <td>Coimbatore,India</td>
+                                  <td class="text-danger my-color" >Rejected</td>
+                                  <td>...</td>
+                              </tr>
+                              <tr class="tr-3">
+                                  <td>
+                                      <input type="checkbox" class="my-inp"/>
+                                  </td>
+                                  <td>23/04/2021</td>
+                                  <td>#00871</td>
+                                  <td>01</td>
+                                  <td>&#8377;2000</td>
+                                  <td class="txt-line">Saranya Devi</td>
+                                  <td>Coimbatore,India</td>
+                                  <td class="text-warning my-color-1">Inprogress</td>
+                                  <td>...</td>
+                              </tr>
+                              <tr class="tr-3">
+                                  <td>
+                                   <input type="checkbox" class="my-inp"/>
+                                  </td>
+                                  <td>23/04/2021</td>
+                                  <td>#06754</td>
+                                  <td>01</td>
+                                  <td>&#8377;1999</td>
+                                  <td class="txt-line">Ramya Vargesh</td>
+                                  <td>Coimbatore,India</td>
+                                  <td class="text-success my-color-2">Deliverd</td>
+                                  <td>...</td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </div>
+                </div>
+            </ng-container>
+        </div>
+    </div>
+  </div>    

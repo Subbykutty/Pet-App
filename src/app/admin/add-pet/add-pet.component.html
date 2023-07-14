@@ -1,0 +1,221 @@
+<div class="container-fluid">
+    <div class="row back">
+        <p (click)="back()"><i class="fa fa-long-arrow-left Arr" aria-hidden="true"></i>Back</p>
+    </div>
+    <div class="row">
+        <h5>Add Pet</h5>
+    </div>
+    <div class="card my-card-1">
+        <form [formGroup]="petForm">        
+        <div class="row">
+            <div class="col-5 ml-5" style="display: flex;flex-direction: column;">
+                <label class="my-label-1">Category</label>
+                <select class="inp-mine option-1" formControlName="category">
+                    <option value=""></option>
+                    <option value="Dog">Dog</option>
+                        <option value="Cat">Cat</option>
+                        <option value="Rabbit">Rabbit</option>
+                    </select>
+                    <span *ngIf="category.invalid && (category.dirty || category.touched)" class="text-danger">
+                        <span id="nameRequired" class="text-danger" *ngIf="category.errors?.['required']">Category is required
+                        </span>
+                    </span>
+            </div>
+            <div class="col-5 ml-5" style="display: flex;flex-direction: column;">
+                <label class="my-label-1">Gender</label>
+                <select class="inp-mine option-1" formControlName="gender">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    </select>
+                    <span *ngIf="gender.invalid && (gender.dirty || gender.touched)" class="text-danger">
+                        <span id="nameRequired" class="text-danger" *ngIf="gender.errors?.['required']">Gender is required
+                        </span>
+                    </span>
+            </div>  
+        </div>
+        <div class="row">
+            <div class="col-5 ml-5" style="display: flex; flex-direction: column;">
+                <label class="my-label-1 mt-2">Pet Name</label>
+                <input class="inp-mine form-control" type="text" formControlName="petName"/>
+                <span *ngIf="petName.invalid && petName.touched" class="text-danger">
+                <span id="nameRequired" class="text-danger" *ngIf="petName.errors?.['required']">Pet Name is required
+                </span>
+                </span>
+                
+                <label class="my-label-1 mt-2" style="padding-top: -30px;">Numbers</label>
+                <input class="inp-mine" type="number" formControlName="numbers"/>
+
+                <div *ngIf="numbers.invalid && numbers.touched" class="text-danger">
+                    <span id="nameRequired" class="text-danger" *ngIf="numbers.errors?.['required']">Number Name is required
+                    </span>
+                </div>
+            </div>
+            <div class="col-5 ml-5" style="display: flex; flex-direction: column;">
+                <label class="my-label-1 mt-2">Description</label>
+                <textarea placeholder="Type here..." class="inp-mine" formControlName="description"></textarea>
+                <span *ngIf="description.invalid && (description.dirty || description.touched)" class="text-danger">
+                    <span id="nameRequired" class="text-danger" *ngIf="description.errors?.['required']">Description Name is required
+                    </span>
+                    </span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-5 ml-5" style="display: flex; flex-direction: column;">
+                <label class="my-label-1 mt-2">Breed</label>
+                <input class="inp-mine" type="text" formControlName="breed"/>
+                <span *ngIf="breed.invalid && (breed.dirty || breed.touched)" class="text-danger">
+                    <span id="nameRequired" class="text-danger" *ngIf="breed.errors?.['required']">Breed is required
+                    </span>
+                    </span>
+            </div>
+            <div class="col-5 ml-5" style="display: flex; flex-direction: column;">
+                <label class="my-label-1 mt-2">Price</label>
+              <input class="inp-mine-2" placeholder="&#8377; " type="number" formControlName="price"/>
+              <span *ngIf="price.invalid && (price.dirty || price.touched)" class="text-danger">
+                <span id="nameRequired" class="text-danger" *ngIf="price.errors?.['required']">Price is required
+                </span>
+                </span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-5 ml-5" style="display: flex; flex-direction: column;">
+                <label class="my-label-1 mt-2">Age</label>
+                <input class="inp-mine" type="text" formControlName="age"/>
+                <span *ngIf="age.invalid && (age.dirty || age.touched)" class="text-danger">
+                    <span id="nameRequired" class="text-danger" *ngIf="age.errors?.['required']">Age is required
+                    </span>
+                    </span>
+            </div>
+            <div class="col-5 ml-5" style="display: flex; flex-direction: column;">
+                <label class="my-label-1 mt-2">Location</label>
+                <input class="inp-mine" type="text" formControlName="location"/>
+                <span *ngIf="location.invalid && (location.dirty || location.touched)" class="text-danger">
+                    <span id="nameRequired" class="text-danger" *ngIf="location.errors?.['required']">Location is required
+                    </span>
+                    </span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-5 ml-5" style="display: flex; flex-direction: column;">
+                <label class="my-label-1 mt-2">Colour</label>
+                <input class="inp-mine" type="text" formControlName="colour"/>
+                <span *ngIf="colour.invalid && (colour.dirty || colour.touched)" class="text-danger">
+                    <span id="nameRequired" class="text-danger" *ngIf="colour.errors?.['required']">Colour is required
+                    </span>
+                    </span>
+            </div>
+        </div>
+
+<div class="row">
+    <div class="col-3 p-mine">
+    <p >Upload Images</p>
+    <span>(2 more images can be add)</span>
+</div>
+<div class="col-4">
+    <button class="btn-mine p-mine-1">UPLOAD</button>
+</div>
+    
+</div>
+
+<div class="row img-div">
+    <div class="col-8">
+        
+        <img class="img-mine" src="../../../assets/red-cross.webp" height="22" width="22"/>
+        
+        <img class="img-mine-1" src="../../../assets/red-cross.webp" height="22" width="22"/>
+        
+        <img class="img-mine-2" src="../../../assets/red-cross.webp" height="22" width="22"/>
+        
+        <img class="img-mine-3" src="../../../assets/red-cross.webp" height="22" width="22"/>
+        <img src="../../../assets/gsd-1.jpg" height="40" width="60" />
+        <img src="../../../assets/gsd-2.jpg" height="40" width="60"> 
+        <img src="../../../assets/gsd-3.jpg" height="40" width="60"/>
+        <img src="../../../assets/gsd-4.jpg" height="40" width="60"/>
+    </div>
+</div>
+    <div class="row mt-4">
+            <div class="col-3 p-mine">
+                <p >Upload Video</p>
+            </div>
+            <div class="col-4">
+                <button class="btn-mine p-mine-1 mt-4">UPLOAD</button>
+            </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col-5 ml-5" style="display: flex;flex-direction: column;">
+            <label class="my-label-1" for="KCI Registration">KCI Registration</label>
+            <select class="inp-mine option-1" formControlName="registration">
+                <option value=""></option>
+                <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+                <span *ngIf="registration.invalid && (registration.dirty || registration.touched)" class="text-danger">
+                    <span id="nameRequired" class="text-danger" *ngIf="registration.errors?.['required']">KCI Registration is required
+                    </span>
+                    </span>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col-3 p-mine">
+            <p >Attach KCI doc.</p>
+        </div>
+        <div class="col-4">
+            <button class="btn-mine p-mine-1 mt-4">UPLOAD</button>
+        </div>
+</div>
+<div class="row mt-3">
+    <div class="col-5 ml-5" style="display: flex;flex-direction: column;">
+        <label class="my-label-1">Champion</label>
+        <select class="inp-mine option-1" formControlName="champion">
+            <option value=""></option>
+            <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+            <span *ngIf="champion.invalid && (champion.dirty || champion.touched)" class="text-danger">
+                <span id="nameRequired" class="text-danger" *ngIf="champion.errors?.['required']">Champion is required
+                </span>
+                </span>
+    </div>
+    <div class="col-5 ml-5" style="display: flex;flex-direction: column;">
+        <label class="my-label-1">Microchip</label>
+        <select class="inp-mine option-1" formControlName="microchip">
+            <option value=""></option>
+            <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+            <span *ngIf="microchip.invalid && (microchip.dirty || microchip.touched)" class="text-danger">
+                <span id="nameRequired" class="text-danger" *ngIf="microchip.errors?.['required']">Microchip is required
+                </span>
+                </span>
+    </div>
+</div>
+<div class="row mt-3">
+    <div class="col-5 ml-5" style="display: flex;flex-direction: column;">
+        <label class="my-label-1">Vaccination</label>
+        <select class="inp-mine option-1" formControlName="vaccination">
+            <option value=""></option>
+            <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+            <span *ngIf="vaccination.invalid && (vaccination.dirty || vaccination.touched)" class="text-danger">
+                <span id="nameRequired" class="text-danger" *ngIf="vaccination.errors?.['required']">Vaccination is required
+                </span>
+                </span>
+    </div>
+</div>
+<div class="row mt-3">
+    <div class="col-3 p-mine">
+        <p>Vaccination Attachment</p>
+    </div>
+    <div class="col-4">
+        <button class="btn-mine p-mine-1 mt-4">UPLOAD</button>
+    </div>
+</div>
+
+<div class="row ml-5 mt-5 btn-div" >
+    <div class="col-4 ml-4 "><button class="Cancel">Cancel</button></div>
+    <div class="col-5 ml-3"><button class="pet" type="submit" (click)="addPet()">Add Pet</button></div>
+</div>
+</form>
+</div>
+</div>
